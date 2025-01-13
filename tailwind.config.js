@@ -2,9 +2,11 @@
 module.exports = {
   theme: {
     extend: {
+      
       colors: {
         navbar: '#6600EE',
         body: '#3700B3',
+        buttons:'#BB86FC'
       },
       fontFamily: {
         montserrat: ["Montserrat-Regular", "sans-serif"],
