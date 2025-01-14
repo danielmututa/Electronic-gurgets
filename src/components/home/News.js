@@ -46,28 +46,36 @@ const News = () => {
           <h4 className='font-montserratBold text-[16px] text-white'>  Fresh Updates & Trends</h4>
            <h1 className='font-montserratBold text-[36px] text-white'> Upcoming Launch Countdown</h1>
            <div className="border w-[70px] border-solid rounded-s-[10px] bg-white p-1"><span></span></div>
+
+           {/* {{TIME ? TIME}} */}
+           
+
+           <div className="flex gap-8 items-center mt-4">
+      <div className="flex flex-col items-center border py-2 px-4  ">
+        <span className="font-bold font-montserratBold text-3xl text-white">{timeLeft.days}</span>
+        <span className="text-sm font-montserratBold text-white">days</span>
+      </div>
+      <div className="flex flex-col items-center  border py-2 px-4">
+        <span className="font-bold text-3xl font-montserratBold text-white">{timeLeft.hours}</span>
+        <span className="text-sm font-montserratBold text-white">hours</span>
+      </div>
+      <div className="flex flex-col items-center  border py-2 px-4">
+        <span className="font-bold font-montserratBold text-3xl text-white">{timeLeft.minutes}</span>
+        <span className="text-sm font-montserratBold text-white">mins</span>
+      </div>
+      <div className="flex flex-col items-center  border py-2 px-4">
+        <span className="font-bold font-montserratBold text-3xl text-white">{timeLeft.seconds}</span>
+        <span className="text-sm font-montserratBold text-white">secs</span>
+      </div>
+    </div>
+<div className="flex gap-3">
+<p className="text-buttons/80 line-through text-[20px] font-montserratBold">$220.00</p>
+<p className='text-[20px] font-montserratBold text-buttons'>$180.00</p>
+</div>
+  
             </div>
 
 
-
-            <div className="flex gap-8 justify-center items-center">
-      <div className="flex flex-col items-center">
-        <span className="font-bold text-3xl">{timeLeft.days}</span>
-        <span className="text-sm">days</span>
-      </div>
-      <div className="flex flex-col items-center">
-        <span className="font-bold text-3xl">{timeLeft.hours}</span>
-        <span className="text-sm">hours</span>
-      </div>
-      <div className="flex flex-col items-center">
-        <span className="font-bold text-3xl">{timeLeft.minutes}</span>
-        <span className="text-sm">mins</span>
-      </div>
-      <div className="flex flex-col items-center">
-        <span className="font-bold text-3xl">{timeLeft.seconds}</span>
-        <span className="text-sm">secs</span>
-      </div>
-    </div>
      
 
     </div>

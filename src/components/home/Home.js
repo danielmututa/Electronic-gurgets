@@ -11,6 +11,7 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
 import styled from 'styled-components'
 import Newproducts from './Newproducts'
 import News from './News'
+import Topsellingproducts from './Topsellingproducts'
 
 const CarouselContainer = styled.div`
   height: 100%;
@@ -140,6 +141,9 @@ const Home = () => {
 
     {/* News  Updates*/}
   <News/>
+
+  {/* TOP SMARTPHONES PRODUCTS */}
+  <Topsellingproducts/>
     </div>
   )
 }
