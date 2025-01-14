@@ -11,7 +11,7 @@ const Topsellingproducts = () => {
     <div className='flex justify-center items-center flex-col py-[80px] px-[100px]'>
 
         <h2 className='font-montserratBold text-[26px] pb-[12px]  '>Top Selling Smartphones</h2>
-        <p className='text-center text-[18px] text-gray-500'>Explore the latest smartphones that are redefining mobile technology. 
+        <p className='text-center text-[18px] text-gray-500 pb-[36px]'>Explore the latest smartphones that are redefining mobile technology. 
             These devices will seamlessly integrate into your daily life, offering advanced features, sleek designs, and powerful performance
              to keep you connected and productive.</p>
 
@@ -41,7 +41,7 @@ const Topsellingproducts = () => {
                       <div className="w-[48%] h-[48%] overflow-hidden relative group">
                       <img src={springsell} className='w-full h-full object-cover group-hover:scale-110 duration-500' alt="" />
                         <div className=" absolute top-0 w-full h-full">
-                            <h4 className=" text-[16px] text-buttons bg-white px-2 py-3 right-0 bottom-0 mb-6 absolute font-montserratBold group-hover:bg-buttons duration-500 group-hover:text-white ">  SPRING SALE </h4>
+                            <h4 className=" text-[16px] text-buttons bg-white px-2 py-3 right-0 bottom-0 mb-6 absolute font-montserratBold group-hover:bg-buttons duration-500 group-hover:text-white ">  Hot Deals! </h4>
                         </div>
                       </div>
                       
@@ -52,8 +52,15 @@ const Topsellingproducts = () => {
                       </div>
 
                       
-                      <div className="w-[48%] h-[48%] overflow-hidden relative">
-                      <img src={summercollecton} className='w-full h-full object-cover' alt="" />
+                      <div className="w-[48%] h-[48%] overflow-hidden relative group">
+                      <img src={summercollecton} className='w-full h-full object-cover group-hover:scale-110 duration-500' alt="" />
+
+                         <div className="absolute  w-full h-full flex justify-center top-0">
+                            <div className=" bg-buttons w-1 p-1"><span></span></div>
+                                  
+                                   <h4 className='text-white font-montserratBold pt-6 text-[16px] group-hover:text-buttons duration-500'>Smartphones Beyond!</h4>
+                            
+                         </div>
                       </div>
 
                       

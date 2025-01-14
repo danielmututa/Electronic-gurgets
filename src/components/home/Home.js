@@ -12,6 +12,8 @@ import styled from 'styled-components'
 import Newproducts from './Newproducts'
 import News from './News'
 import Topsellingproducts from './Topsellingproducts'
+import Fastdelivary from './Fastdelivary'
+import Blogs from './Blogs'
 
 const CarouselContainer = styled.div`
   height: 100%;
@@ -144,6 +146,12 @@ const Home = () => {
 
   {/* TOP SMARTPHONES PRODUCTS */}
   <Topsellingproducts/>
+
+  {/* Fast Delivary */}
+  < Fastdelivary/>
+
+  {/* Blogs */}
+  <Blogs/>
     </div>
   )
 }
