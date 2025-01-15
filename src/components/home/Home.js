@@ -117,7 +117,7 @@ const Home = () => {
             isActive={index === activeIndex}
             className="flex relative items-start"
           >
-            <img src={card.img} className='w-full h-[100vh] object-cover' alt="" />
+            <img loading='lazy' src={card.img} className='w-full h-[100vh] object-cover' alt="" />
             <div className="absolute w-full top-0 h-full flex items-start justify-center flex-col px-[100px] gap-3">
               <p className='text-white text-[14px] font-semibold font-montserrat'>{card.title}</p>
               <p className='text-3xl text-white font-montserrat'>{card.all}</p>

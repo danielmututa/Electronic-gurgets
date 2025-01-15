@@ -1,4 +1,4 @@
-import { ArrowBigRight, ArrowRight } from 'lucide-react'
+import {  ArrowRight } from 'lucide-react'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
@@ -18,7 +18,7 @@ const Blogs = () => {
        {
         blogs.map((card,index) => (
           <div key={index} className="w-[30%] group">
-            <img src={require("../Images/" + card.img)} alt="" className='h-[300px] w-full object-cover' />
+            <img loading='lazy'  src={require("../Images/" + card.img)} alt="" className='h-[300px] w-full object-cover' />
             <p className="text-[16px] font-montserrat text-gray-500 pt-[10px]">{card.type}</p>
             <p className="text-[14px] font-montserratBold pt-[8px] pb-[8px]">{card.des}</p>
 

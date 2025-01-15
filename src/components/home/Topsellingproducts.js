@@ -17,7 +17,7 @@ const Topsellingproducts = () => {
 
              <div className="flex justify-between">
                 <div className="w-[49%] h-[440px] relative overflow-hidden group ">
-                    <img src={newspring} className='w-full h-full object-cover  group-hover:scale-110 transform transition-all duration-500 ' alt="" />
+                    <img loading='lazy' src={newspring} className='w-full h-full object-cover  group-hover:scale-110 transform transition-all duration-500 ' alt="" />
 
                     <div className="absolute top-0 pt-12 pl-10 left-0 flex flex-col w-full gap-2 h-full">
                         <h4 className='font-montserratBold text-white text-[16px]'>Fresh Finds for Tech Enthusiasts!</h4>
@@ -30,7 +30,7 @@ const Topsellingproducts = () => {
 
 
                       <div className="w-[48%] h-[48%] overflow-hidden relative group">
-                      <img src={online} className='w-full  h-full object-cover group-hover:scale-110 duration-500  ' alt="" />
+                      <img loading='lazy' src={online} className='w-full  h-full object-cover group-hover:scale-110 duration-500  ' alt="" />
 
                      <div className="absolute top-0 right-0 pr-2 pt-6 h-full w-full flex flex-col gap-2 items-end"> 
                         <h4 className='text-white text-[16px] font-montserratBold'>Online Exclusive</h4>
@@ -39,21 +39,21 @@ const Topsellingproducts = () => {
                       </div>
 
                       <div className="w-[48%] h-[48%] overflow-hidden relative group">
-                      <img src={springsell} className='w-full h-full object-cover group-hover:scale-110 duration-500' alt="" />
+                      <img loading='lazy' src={springsell} className='w-full h-full object-cover group-hover:scale-110 duration-500' alt="" />
                         <div className=" absolute top-0 w-full h-full">
                             <h4 className=" text-[16px] text-buttons bg-white px-2 py-3 right-0 bottom-0 mb-6 absolute font-montserratBold group-hover:bg-buttons duration-500 group-hover:text-white ">  Hot Deals! </h4>
                         </div>
                       </div>
                       
                       <div className="w-[48%] h-[48%] overflow-hidden relative group">
-                      <img src={selle}  className='w-full h-full object-cover group-hover:scale-110 duration-500' alt="" />
+                      <img loading='lazy' src={selle}  className='w-full h-full object-cover group-hover:scale-110 duration-500' alt="" />
                       <h4 className=" text-[16px] bg-white px-2 py-3 text-buttons right-0 bottom-0 mb-6 absolute font-montserratBold group-hover:bg-buttons duration-500 group-hover:text-white">70% SALE</h4>
 
                       </div>
 
                       
                       <div className="w-[48%] h-[48%] overflow-hidden relative group">
-                      <img src={summercollecton} className='w-full h-full object-cover group-hover:scale-110 duration-500' alt="" />
+                      <img loading='lazy' src={summercollecton} className='w-full h-full object-cover group-hover:scale-110 duration-500' alt="" />
 
                          <div className="absolute  w-full h-full flex justify-center top-0">
                             <div className=" bg-buttons w-1 p-1"><span></span></div>

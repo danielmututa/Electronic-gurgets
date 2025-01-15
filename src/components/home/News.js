@@ -41,7 +41,7 @@ const News = () => {
 
   return (
     <div className='relative h-[450px]'>
-        <img src={newsimg} className='object-cover w-full h-full' alt="" />
+        <img loading='lazy' src={newsimg} className='object-cover w-full h-full' alt="" />
         <div className="absolute left-[100px]  top-0  flex justify-center  h-full flex-col gap-3">
           <h4 className='font-montserratBold text-[16px] text-white'>  Fresh Updates & Trends</h4>
            <h1 className='font-montserratBold text-[36px] text-white'> Upcoming Launch Countdown</h1>

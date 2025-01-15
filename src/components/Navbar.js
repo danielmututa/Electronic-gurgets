@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronDown, Search, ShoppingCart, User } from 'lucide-react';
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -42,38 +42,55 @@ const Navbar = () => {
             <ChevronDown size={14} className={`text-white transition-transform duration-300 ${openMenu === 'pages' ? 'rotate-180' : ''}`} />
           </button>
           <div 
-            className={`absolute left-0 mt-[18px] w-48 bg-white border rounded shadow-lg z-10 transition-all duration-300 origin-top ${
+            className={`absolute left-0 mt-[18px] flex-col w-48 bg-white border rounded shadow-lg z-10 transition-all duration-300 origin-top ${
               openMenu === 'pages' ? 'opacity-100 transform scale-y-100' : 'opacity-0 transform scale-y-0'
             }`}
           >
-            <ul>
-              <li 
-                className="px-4 py-4 hover:bg-buttons cursor-pointer"
-                onClick={handleMenuItemClick}
-              >About us</li>
-              <li 
-                className="px-4 py-4 hover:bg-buttons cursor-pointer"
-                onClick={handleMenuItemClick}
-              >About Team</li>
-              <li 
-                className="px-4 py-4 hover:bg-buttons cursor-pointer"
-                onClick={handleMenuItemClick}
-              >Contact us</li>
-              <li 
-                className="px-4 py-4 hover:bg-buttons cursor-pointer"
-                onClick={handleMenuItemClick}
-              >FAQ</li>
 
-              <li 
-                className="px-4 py-4 hover:bg-buttons cursor-pointer"
-                onClick={handleMenuItemClick}
-              >Wishlist</li>
 
-              <li 
+
+       <div className="w-full flex flex-col">
+              <Link to="/about"
+                className="px-4 py-4  hover:bg-buttons cursor-pointer"
+                onClick={handleMenuItemClick}
+              >About us</Link>
+
+              <Link to="/team"
                 className="px-4 py-4 hover:bg-buttons cursor-pointer"
                 onClick={handleMenuItemClick}
-              >Login</li>
-            </ul>
+              >About Team</Link>
+
+              <Link to="/services" 
+                className="px-4 py-4 hover:bg-buttons cursor-pointer"
+                onClick={handleMenuItemClick}
+              >Services</Link>
+
+              <Link to="" 
+                className="px-4 py-4 hover:bg-buttons cursor-pointer"
+                onClick={handleMenuItemClick}
+              >Contact us</Link>
+
+              <Link to="" 
+                className="px-4 py-4 hover:bg-buttons cursor-pointer"
+                onClick={handleMenuItemClick}
+              >FAQ</Link>
+
+              <Link to="" 
+                className="px-4 py-4 hover:bg-buttons cursor-pointer"
+                onClick={handleMenuItemClick}
+              >Wishlist</Link>
+
+              <Link to="" 
+                className="px-4 py-4 hover:bg-buttons cursor-pointer"
+                onClick={handleMenuItemClick}
+              >Login</Link>
+           
+           </div>
+
+
+
+
+            
           </div>
         </div>
 

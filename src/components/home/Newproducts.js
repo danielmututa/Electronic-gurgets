@@ -107,7 +107,7 @@ const Newproducts = () => {
          newproducts.map((card,index)=> (
             <div className="w-[23%] relative gap-[4px] h-[400px] mb-8 group ">
                <div className="relative w-full h-[300px] overflow-hidden">
-                <img  src={require("../Images/" + card.img) } alt="" className="hover:scale-105 transition-transform duration-500  w-full object-cover h-full  " />
+                <img loading='lazy'  src={require("../Images/" + card.img) } alt="" className="hover:scale-105 transition-transform duration-500  w-full object-cover h-full  " />
                  
                    {/* Icons Container */}
                    <div className="absolute top-0 right-[10px] h-full flex items-center gap-5 flex-col justify-center opacity-0 translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
