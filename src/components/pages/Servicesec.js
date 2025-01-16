@@ -51,6 +51,7 @@ const service = [
             service.map((card,index) => (
                 <div key={index} className="flex w-[30%] items-center justify-center flex-col">
                       <img className='object-cover w-full h-[230px]' src={require("../Images/" + card.img)} alt="" />
+                      <p>{card.type}</p>
                 </div>
             ))
          }
