@@ -1,0 +1,85 @@
+import React from 'react'
+
+
+const Servicesec = () => {
+
+const service = [
+          {
+            img:"Repair.jpg",
+             type:"Repair",
+             des:"We fix electronic gadgets with care, including smartphone screens, laptop hardware, and essential home appliances like TVs and microwaves. Get your devices working like new again."
+
+          },
+          {
+            img:"Salea.jpg",
+             type:"Sales",
+            des:"Upgrade or declutter with ease! Buy and sell pre-owned gadgets or enhance your devices with hardware upgrades like more RAM or improved storage."
+
+          },
+          {
+            img:"Recycling.jpg",
+             type:"Recycling",
+            des:"Make a difference by recycling your old gadgets responsibly. We also refurbish and resell devices to give them a second life and reduce waste."
+
+          },
+          {
+            img:"Customization.jpg",
+             type:"Customization",
+            des:"Tailor your tech to your needs. From custom-built PCs for gaming or work to setting up smart home systems, we bring your vision to life."
+
+          },
+          {
+            img:"Software.jpg",
+             type:"Software",
+            des:"Keep your gadgets running smoothly with our software services. We install operating systems, recover lost data, and optimize performance with essential apps."
+
+          },
+          {
+            img:"Suport.jpg",
+             type:"Suport",
+            des:"Gain confidence in using your devices with our training sessions. For ongoing needs, our remote tech support is ready to help with any issues."
+
+          }
+
+]
+
+  return (
+    <div className=' px-[100px] py-[80px] '>
+       
+       <div className="flex justify-between flex-wrap gap-12 items-center">
+         {
+            service.map((card,index) => (
+                <div key={index} className="flex w-[30%] items-center justify-center flex-col">
+                      <img className='object-cover w-full h-[230px]' src={require("../Images/" + card.img)} alt="" />
+                </div>
+            ))
+         }
+          </div>
+        </div>
+  )
+}
+
+export default Servicesec
+
+
+
+
+// Repair: <Wrench />
+
+// We fix electronic gadgets with care, including smartphone screens, laptop hardware, and essential home appliances like TVs and microwaves. Get your devices working like new again.
+// Sales: <ShoppingCart />
+
+// Upgrade or declutter with ease! Buy and sell pre-owned gadgets or enhance your devices with hardware upgrades like more RAM or improved storage.
+// Customization: <Monitor />
+
+// Tailor your tech to your needs. From custom-built PCs for gaming or work to setting up smart home systems, we bring your vision to life.
+// Recycling: <Recycle />
+
+// Make a difference by recycling your old gadgets responsibly. We also refurbish and resell devices to give them a second life and reduce waste.
+// Software: <Database />
+
+// Keep your gadgets running smoothly with our software services. We install operating systems, recover lost data, and optimize performance with essential apps.
+// Support: <BookOpen />
+
+// Gain confidence in using your devices with our training sessions. For ongoing needs, our remote tech support is ready to help with any issues.
+
