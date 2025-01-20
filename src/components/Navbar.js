@@ -65,7 +65,7 @@ const Navbar = () => {
                 onClick={handleMenuItemClick}
               >Services</Link>
 
-              <Link to="" 
+              <Link to="/contact" 
                 className="px-4 py-4 hover:bg-buttons cursor-pointer"
                 onClick={handleMenuItemClick}
               >Contact us</Link>

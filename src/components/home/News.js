@@ -40,31 +40,31 @@ const News = () => {
 
 
   return (
-    <div className='relative h-[450px]'>
+    <div className='h-[350px]  relative lg:h-[450px]'>
         <img loading='lazy' src={newsimg} className='object-cover w-full h-full' alt="" />
-        <div className="absolute left-[100px]  top-0  flex justify-center  h-full flex-col gap-3">
-          <h4 className='font-montserratBold text-[16px] text-white'>  Fresh Updates & Trends</h4>
-           <h1 className='font-montserratBold text-[36px] text-white'> Upcoming Launch Countdown</h1>
-           <div className="border w-[70px] border-solid rounded-s-[10px] bg-white p-1"><span></span></div>
+        <div className=" left-5 gap-2   absolute  lg:left-[100px]  top-0  flex justify-center  h-full flex-col lg:gap-3">
+          <h4 className='text-[16px] md:text-[16px]  font-montserratBold  lg:text-[16px] text-white'>  Fresh Updates & Trends</h4>
+           <h1 className='text-[24px] md:text-[28px]  font-montserratBold lg:text-[32px] xl:text-[36px] text-white'> Upcoming Launch Countdown</h1>
+           <div className="p-[2px] border w-[70px] border-solid rounded-s-[10px] bg-white lg:p-1"><span></span></div>
 
            {/* {{TIME ? TIME}} */}
            
 
-           <div className="flex gap-8 items-center mt-4">
+           <div className="gap-3 mt-3 flex lg:gap-8 items-center lg:mt-4">
       <div className="flex flex-col items-center border py-2 px-4  ">
-        <span className="font-bold font-montserratBold text-3xl text-white">{timeLeft.days}</span>
+        <span className="text-[25px] md:text-[28px] font-bold font-montserratBold lg:text-3xl text-white">{timeLeft.days}</span>
         <span className="text-sm font-montserratBold text-white">days</span>
       </div>
       <div className="flex flex-col items-center  border py-2 px-4">
-        <span className="font-bold text-3xl font-montserratBold text-white">{timeLeft.hours}</span>
+        <span className="text-[25px] md:text-[28px] font-bold lg:text-3xl font-montserratBold text-white">{timeLeft.hours}</span>
         <span className="text-sm font-montserratBold text-white">hours</span>
       </div>
       <div className="flex flex-col items-center  border py-2 px-4">
-        <span className="font-bold font-montserratBold text-3xl text-white">{timeLeft.minutes}</span>
+        <span className=" text-[25px] md:text-[28px] font-bold font-montserratBold lg:text-3xl text-white">{timeLeft.minutes}</span>
         <span className="text-sm font-montserratBold text-white">mins</span>
       </div>
       <div className="flex flex-col items-center  border py-2 px-4">
-        <span className="font-bold font-montserratBold text-3xl text-white">{timeLeft.seconds}</span>
+        <span className="text-[25px] md:text-[28px]  font-bold font-montserratBold lg:text-3xl text-white">{timeLeft.seconds}</span>
         <span className="text-sm font-montserratBold text-white">secs</span>
       </div>
     </div>

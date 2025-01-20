@@ -46,12 +46,21 @@ const service = [
   return (
     <div className=' px-[100px] py-[80px] '>
        
-       <div className="flex justify-between flex-wrap gap-12 items-center">
+       <div className="flex justify-between  flex-wrap gap-12 items-start">
          {
             service.map((card,index) => (
-                <div key={index} className="flex w-[30%] items-center justify-center flex-col">
-                      <img className='object-cover w-full h-[230px]' src={require("../Images/" + card.img)} alt="" />
-                      <p>{card.type}</p>
+                <div key={index} className="flex w-[30%] items-center justify-center gap-3 flex-col">
+
+                    <div className="w-full h-[230px] relative">
+                    <img loading='lazy' className='object-cover w-full  h-full' src={require("../Images/" + card.img)} alt="" />
+                    <div className="absolute top-0 flex items-end pb-8  h-full w-full">
+                        <div className="p-3 bg-white">
+                        <p className='font-montserratBold text-buttons'>{card.type}</p>
+                        </div>
+                    </div>
+                    </div>
+                      
+                    <p className='font-montserrat text-[16]'>{card.des}</p>
                 </div>
             ))
          }

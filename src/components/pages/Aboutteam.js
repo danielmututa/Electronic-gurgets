@@ -1,6 +1,7 @@
 import React from 'react'
 import team from "../Images/team.jpg"
 import Aboutteamf from './Aboutteamf'
+import Testimonials from '../testimonials/Testmonials'
 const Aboutteam = () => {
 
   
@@ -16,6 +17,7 @@ const Aboutteam = () => {
     </div>
 
 < Aboutteamf/>    
+
     </div>
   )
 }
