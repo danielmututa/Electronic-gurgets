@@ -6,11 +6,11 @@ const Services = () => {
   return (
     <div className=''>
     
-        <div className="relative h-[75vh] w-full">
+        <div className="h-[400px] md:h-[400px] lg:h-[400px]  relative xl:h-[75vh] w-full">
             <img src={banner} className='h-full w-full object-cover ' alt="" />
-            <div className="w-full h-full top-0  bg-blue-600/40  absolute flex items-center justify-center flex-col text-center px-[100px] gap-2 ">
-               <h2 className='text-white font-montserratBold text-[26px]'>Our Services</h2>
-               <p className='text-[18px] text-white font-montserrat'>At TechRevive, we provide a wide range of top-tier solutions to meet your electronic device needs. Whether you're looking for the latest mobile phones, laptops, or require expert repair services, we have you covered. We pride ourselves on delivering exceptional customer service and reliable, cutting-edge products.</p>
+            <div className="w-full h-full top-0  bg-blue-600/40  absolute flex items-center justify-center flex-col text-center px-[20px] md:px-[40px] lg:px-[60px] xl:px-[100px] gap-2 ">
+               <h2 className='text-white font-montserratBold text-[20px] md:text-[23px] lg:text-[26px]'>Our Services</h2>
+               <p className=' text-sm md:text-[16px] lg:text-[18px] text-white font-montserrat'>At TechRevive, we provide a wide range of top-tier solutions to meet your electronic device needs. Whether you're looking for the latest mobile phones, laptops, or require expert repair services, we have you covered. We pride ourselves on delivering exceptional customer service and reliable, cutting-edge products.</p>
             </div>
         </div>
 

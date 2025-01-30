@@ -111,7 +111,7 @@ const Testimonials = () => {
   }, [testimonials.length]);
 
   return (
-    <div className='pb-[80px]'>
+    <div className=' pb-[50px] md:pb-[60px] xl:pb-[80px]'>
       <div className="relative overflow-hidden w-full">
         <div 
           className="flex gap-14 transition-transform duration-300 ease-linear"
@@ -122,9 +122,9 @@ const Testimonials = () => {
           {duplicatedTestimonials.map((card, index) => (
             <div 
               key={index}
-              className="relative w-[35%] flex-shrink-0 flex flex-col gap-7"
+              className="relative w-full md:w-[35%] flex-shrink-0 flex flex-col gap-7"
             >
-              <p className='font-montserrat pt-10'>{card.Comment}</p>
+              <p className='text-sm md:text-[16px] font-montserrat pt-10'>{card.Comment}</p>
               <div className="flex items-center gap-3">
                 <img 
                   src={require("../Images/" + card.img)} 
@@ -133,7 +133,7 @@ const Testimonials = () => {
                 />
                 <div className="flex flex-col">
                   <h4 className='font-montserratBold text-buttons'>{card.name}</h4>
-                  <p className='font-montserrat text'>{card.role}</p>
+                  <p className=' text-sm md:text-[16px]  font-montserrat text'>{card.role}</p>
                 </div>
               </div>
               <card.icon size={30} className='text-buttons absolute  top-[-5]' />

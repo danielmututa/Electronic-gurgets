@@ -44,12 +44,12 @@ const service = [
 ]
 
   return (
-    <div className=' px-[100px] py-[80px] '>
+    <div className=' px-[20px] py-[50px] md:py-[60px] lg:py-[60px] md:px-[40px] lg:px-[60px] xl:px-[100px]  xl:py-[80px] '>
        
-       <div className="flex justify-between  flex-wrap gap-12 items-start">
+       <div className="flex justify-between  flex-wrap gap-7 md:gap-6 lg:gap-8 xl:gap-12 items-start">
          {
             service.map((card,index) => (
-                <div key={index} className="flex w-[30%] items-center justify-center gap-3 flex-col">
+                <div key={index} className="flex w-full md:w-[48%] lg:w-[30%] items-center justify-center gap-3  flex-col">
 
                     <div className="w-full h-[230px] relative">
                     <img loading='lazy' className='object-cover w-full  h-full' src={require("../Images/" + card.img)} alt="" />
@@ -60,7 +60,7 @@ const service = [
                     </div>
                     </div>
                       
-                    <p className='font-montserrat text-[16]'>{card.des}</p>
+                    <p className='font-montserrat text-sm  md:text-[16]'>{card.des}</p>
                 </div>
             ))
          }

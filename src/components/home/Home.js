@@ -1,7 +1,3 @@
-
-
-
-
 import React, { useState, useEffect } from 'react'
 import brn from "../Images/Iphonebanner3.jpg"
 import brn2 from "../Images/Samsuag.jpg"
@@ -104,12 +100,12 @@ const Home = () => {
   return (
     <div>
     <CarouselContainer>
-      <NavigationButton className="prev" onClick={goToPrevious}>
-        <ChevronLeft size={30} color="white" />
-      </NavigationButton>
-      <NavigationButton className="next" onClick={goToNext}>
-        <ChevronRight size={30} color="white" />
-      </NavigationButton>
+      <div className="   absolute left-[20px] top-1/2 transform bg-[#fff]/50 cursor-pointer z-20 duration-300 flex items-center justify-center border-none w-[50px] h-[50px] rounded-full " onClick={goToPrevious}>
+        <ChevronLeft className=' h-[20px] w-[20px]  lg:h-[30px]  lg:w-[30px]' color="white" />
+      </div>
+      <div className="prev right-[20px] absolute top-1/2 transform bg-[#fff]/50 cursor-pointer z-20 duration-300 flex items-center justify-center border-none w-[50px] h-[50px] rounded-full" onClick={goToNext}>
+        <ChevronRight className=' h-[20px] w-[20px]  lg:h-[30px]  lg:w-[30px]' color="white" />
+      </div>
 
       <CarouselInner>
         {Bannercards.map((card, index) => (
@@ -118,13 +114,13 @@ const Home = () => {
             isActive={index === activeIndex}
             className="flex relative items-start"
           >
-            <img loading='lazy' src={card.img} className='w-full sm:h-[700px] sm:object-cover lg:h-[100vh] lg:object-cover' alt="" />
-            <div className="absolute w-full top-0 h-full flex items-start justify-center flex-col  sm:px-[20px] sm:gap-2 md:px-[40px] lg:px-[100px]  lg:gap-3">
+            <img loading='lazy' src={card.img} className='w-full h-[480px] object-cover lg:h-[520px] xl:h-[100vh]  lg:object-cover' alt="" />
+            <div className="absolute w-full top-0 h-full flex items-start justify-center flex-col  px-[20px] gap-2 md:px-[40px] lg:px-[100px]  lg:gap-3">
               <p className='text-white text-[14px] font-semibold font-montserrat'>{card.title}</p>
-              <p className='text-3xl text-white font-montserrat'>{card.all}</p>
-              <h1 className='font-montserratBold pb-2 sm:text-[25px] lg:text-4xl text-white'>{card.des}</h1>
+              <p className='      text-22px    md:text-[22px]   lg:text-[26px]      xl:text-3xl text-white font-montserrat'>{card.all}</p>
+              <h1 className='font-montserratBold pb-2 text-[24px] md:text-[24px] lg:text-[32px] xl:text-4xl text-white'>{card.des}</h1>
               <NavLink 
-                className='border-[1px] px-[50px] py-[12px] font-montserrat relative m-0 h-[60px] flex justify-center items-center cursor-pointer uppercase bg-none border-[#fff] rounded-[0px] text-body font-normal text-[18px] overflow-hidden transition-all duration-300 hover:animate-[rotate_0.7s_ease-in-out] group'
+                className='border-[1px]   px-[20px] md:px-[30px]  lg:px-[40px]  xl:px-[50px]  py-[8px] md:py-[10px] xl:py-[12px] font-montserrat relative m-0 xl:h-[60px] flex justify-center items-center cursor-pointer uppercase bg-none border-[#fff] rounded-[0px] text-body font-normal text-14px  xl:text-[18px] overflow-hidden transition-all duration-300 hover:animate-[rotate_0.7s_ease-in-out] group'
                 to=''
               >
                 <span className="text-white text-[14px] font-montserratBold font-medium tracking-[0.7px] group-hover:animate-[storm_0.7s_ease-in-out] group-hover:delay-[60ms] flex items-center">

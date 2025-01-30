@@ -11,15 +11,15 @@ const Aboutteamf = () => {
         ]
 
   return (
-    <div className='px-[100px] py-[80px]'>
-        <div className="flex justify-between">
+    <div className='  px-[20px] py-[50px] md:px-[40px] md:py-[60px] lg:px-[80px] lg:py-[60px] xl:px-[100px] xl:py-[80px]'>
+        <div className="flex flex-col md:flex-row md:flex-wrap xl:flex-row justify-between">
             {
                 cardteam.map((card,index) => (
-                    <div key={index} className="w-[30%] flex flex-col  items-center text-center justify-center">
+                    <div key={index} className="w-full pb-[28px] md:pb-[40px] md:w-[45%] lg:w-[30%] flex flex-col  items-center text-center justify-center">
                       <img loading='lazy' className=' object-cover w-full h-[280px]'  src={require("../Images/" + card.img)} alt="" />
-                      <p className='font-montserratBold text-[16px]] pt-[14px]'>{card.name}</p>
-                      <p className='font-montserrat text-buttons text-[16px]]'>{card.position}</p>
-                      <p className='font-montserrat text-gray-500 text-[16px]]'>{card.des}</p>
+                      <p className='font-montserratBold  md:text-[16px]] pt-[14px]'>{card.name}</p>
+                      <p className='font-montserrat text-buttons  md:text-[16px]]'>{card.position}</p>
+                      <p className='font-montserrat text-gray-500 text-sm md:text-[16px]]'>{card.des}</p>
 
                     </div>
                 ))

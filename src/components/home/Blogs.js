@@ -12,14 +12,14 @@ const Blogs = () => {
     ]
 
   return (
-    <div className="flex items-center justify-center px-[100px] py-[80px]">
+    <div className="flex  items-center justify-center py-[50px]  px-[20px]  md:px-[40px] md:py-[60px] lg:px-[80px] lg:py-[60px] xl:px-[100px] xl:py-[80px]">
 
-    <div className='flex justify-between '>
+    <div className='flex flex-col md:flex-row md:flex-wrap gap-6 justify-between '>
        {
         blogs.map((card,index) => (
-          <div key={index} className="w-[30%] group">
-            <img loading='lazy'  src={require("../Images/" + card.img)} alt="" className='h-[300px] w-full object-cover' />
-            <p className="text-[16px] font-montserrat text-gray-500 pt-[10px]">{card.type}</p>
+          <div key={index} className=" w-full mb-[28px] md:mb-0 md:w-[48%]  lg:w-[30%] group">
+            <img loading='lazy'  src={require("../Images/" + card.img)} alt="" className='   h-[300px]  md:h-[250px]  lg:h-[300px] w-full object-cover' />
+            <p className="text-sm lg:text-[16px] font-montserrat text-gray-500 pt-[10px]">{card.type}</p>
             <p className="text-[14px] font-montserratBold pt-[8px] pb-[8px]">{card.des}</p>
 
             <NavLink to="" className="text-[16px] font-montserrat flex items-center gap-2  text-buttons underline ">{card.btn}  <ArrowRight className='group-hover:translate-x-2 duration-500' size={20}/> </NavLink>
