@@ -10,6 +10,8 @@ import Services from './components/pages/Services';
 import Contactpage from './components/pages/Contactpage';
 import Footer from './components/footer/Footer';
 import FQA from './components/pages/FQA';
+import Whilelist from './components/pages/Whilelist';
+import Login from './components/pages/Login';
 
 
 
@@ -24,6 +26,8 @@ function App() {
         <Route path='services' element={<Services/>}/>
         <Route path='contact' element={<Contactpage/>}/>
         <Route path='faq' element={< FQA/>}/>
+        <Route path='whilelist' element={< Whilelist/>}/>
+        <Route path='login' element={< Login/>}/>
        </Routes>
        <Footer/>
     </div>

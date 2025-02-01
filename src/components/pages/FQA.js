@@ -197,13 +197,13 @@ import React, { useState } from 'react';
         <div className="border flex-col flex p-2 justify-between border-buttons ">
           <div className="flex w-full justify-between">
             <p className="text-sm lg:text-[16px] font-montserrat">What Warranty Do You Offer?</p>
-            {openFAQ === 3 ? (
-              <Minus className="mr-5" size={20} onClick={() => handleToggle(3)} />
+            {openFAQ === 7 ? (
+              <Minus className="mr-5" size={20} onClick={() => handleToggle(7)} />
             ) : (
-              <Plus className="mr-5" size={20} onClick={() => handleToggle(3)} />
+              <Plus className="mr-5" size={20} onClick={() => handleToggle(7)} />
             )}
           </div>
-          {openFAQ === 3 && (
+          {openFAQ === 7 && (
             <div className="pt-4 ">
               <p className="text-sm md:text-[16px] text-buttons font-montserrat">We offer a minimum 6-month warranty on all refurbished devices, covering repairs and replacements for any defects or issues that may arise.</p>
             </div>

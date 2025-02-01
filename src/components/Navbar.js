@@ -75,12 +75,12 @@ const Navbar = () => {
                 onClick={handleMenuItemClick}
               >FAQ</Link>
 
-              <Link to="" 
+              <Link to="/whilelist" 
                 className="px-4 py-4 hover:bg-buttons cursor-pointer"
                 onClick={handleMenuItemClick}
               >Wishlist</Link>
 
-              <Link to="" 
+              <Link to="/login" 
                 className="px-4 py-4 hover:bg-buttons cursor-pointer"
                 onClick={handleMenuItemClick}
               >Login</Link>
