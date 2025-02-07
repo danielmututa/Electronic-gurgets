@@ -1,100 +1,12 @@
-import { Heart, SearchX, ShoppingCart } from 'lucide-react'
+
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Database from '../Database'
 
 
 const Newproducts = () => {
 
-    const newproducts = [
-        { 
-              img:"IphonBxed.jpg", 
-               name:"Iphone" , 
-               type:"iPhone 13 Pro Max",
-               price:"$200" ,
-               like:Heart,
-               search:SearchX,
-               shop:ShoppingCart
-            },
-        {img:"IphoneB.jpg",
-             name:"Iphone" ,
-             type:"iPhone 13 Pro Max",
-             price:"$200" ,
-            like:Heart,
-             search:SearchX,
-             shop:ShoppingCart
-
-        },
-
-        {img:"IphoneM.jpg",
-             name:"Iphone" ,
-             type:"iPhone 13 Pro Max",
-             price:"$200" ,
-            like:Heart,
-             search:SearchX,
-             shop:ShoppingCart
-
-        },
-
-        {img:"IphoneSiv.jpg",
-             name:"Iphone" ,
-             type:"iPhone 13 Pro Max",
-             price:"$200" ,
-            like:Heart,
-             search:SearchX,
-             shop:ShoppingCart
-
-        },
-
-        {img:"OppoCel.jpg",
-             name:"Iphone" ,
-             type:"iPhone 13 Pro Max",
-             price:"$200" ,
-            like:Heart,
-             search:SearchX,
-             shop:ShoppingCart
-
-        },
-
-        {img:"SamsumgPd.jpg",
-             name:"Iphone" ,
-             type:"iPhone 13 Pro Max",
-             price:"$200" ,
-            like:Heart,
-             search:SearchX,
-             shop:ShoppingCart
-
-        },
-
-        {img:"IphonBxed.jpg",
-             name:"Iphone" ,
-             type:"iPhone 13 Pro Max",
-             price:"$200" ,
-            like:Heart,
-             search:SearchX,
-             shop:ShoppingCart
-
-        },
-
-        {img:"IphonBxed.jpg",
-             name:"Iphone" ,
-             type:"iPhone 13 Pro Max",
-             price:"$200" ,
-            like:Heart,
-             search:SearchX,
-             shop:ShoppingCart
-
-        },
-        {img:"IphonBxed.jpg",
-             name:"Iphone" ,
-             type:"iPhone 13 Pro Max",
-             price:"$200" ,
-            like:Heart,
-             search:SearchX,
-             shop:ShoppingCart
-
-        },
-
-    ]
+    
   return (
     <div className='px-[20px] py-[50px] flex flex-col items-center justify-center sm:px-[20px] sm:py-[50px] md:px-[40px] lg:px-[100px] lg:py-[80px] '>
    <h2 className="  pb-2 text-[20px] md:text-[23px]  lg:text-[26px] font-montserratBold lg:pb-3"> New Products</h2>
@@ -104,24 +16,23 @@ const Newproducts = () => {
       
       <div className="flex justify-between flex-wrap">
         {
-         newproducts.map((card,index)=> (
-            <div className= "mb-[20px] w-full   md:w-[48%]   lg:w-[23%] relative gap-[4px] h-[400px] lg:mb-8 group ">
+        Database.map((card,index)=> (
+            <div className= "mb-[20px] w-full   md:w-[48%]   lg:w-[30%] xl:w-[23%] relative gap-[4px] h-[400px] lg:mb-8 group ">
                <div className="relative w-full h-[300px] overflow-hidden">
                 <img loading='lazy'  src={require("../Images/" + card.img) } alt="" className="hover:scale-105 transition-transform duration-500  w-full object-cover h-full  " />
                  
-                   {/* Icons Container */}
-                   <div className="absolute top-0 right-[10px] h-full flex items-center gap-5 flex-col justify-center opacity-0 translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-                     <NavLink className="hover:scale-110 transition-transform hover:text-buttons">
-                       <card.like size={18} />
-                     </NavLink>
-                     <NavLink className="hover:scale-110 transition-transform hover:text-buttons">
-                       <card.search size={18} />
-                     </NavLink>
-                     <NavLink className="hover:scale-110 transition-transform  hover:text-buttons">
-                       <card.shop size={18} />
-                     </NavLink>
-                   </div>
-                 
+                  {/* Icons Container */}
+                                  <div className="absolute top-0 right-4 h-full flex items-center gap-4 flex-col justify-center opacity-0 translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                                    <NavLink className="p-2 bg-white rounded-full shadow-md hover:scale-110 transition-transform hover:text-buttons">
+                                      <card.like size={18} />
+                                    </NavLink>
+                                    <NavLink className="p-2 bg-white rounded-full shadow-md hover:scale-110 transition-transform hover:text-buttons">
+                                      <card.search size={18} />
+                                    </NavLink>
+                                    <NavLink className="p-2 bg-white rounded-full shadow-md hover:scale-110 transition-transform hover:text-buttons">
+                                      <card.shop size={18} />
+                                    </NavLink>
+                                  </div>
                                    
 
                 </div>

@@ -2,6 +2,11 @@ import React from 'react'
 import contactone from "../Images/contactpage.jpg"
 import {  PhoneIcon } from 'lucide-react'
 import map from "../Images/map.jpg"
+import { HiOutlineMailOpen } from "react-icons/hi";
+import { FaInstagram } from "react-icons/fa";
+import {HiLocationMarker} from "react-icons/hi";
+import { FiFacebook } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Contactpage = () => {
 
@@ -10,20 +15,20 @@ const contact = [
       icon: PhoneIcon, type:"Phone", content:"+263-775306263"
    },
     {
-      icon: PhoneIcon, type:"Email", content:"type@gmail.com"
+      icon:HiOutlineMailOpen, type:"Email", content:"type@gmail.com"
    },
     {
-      icon: PhoneIcon, type:"Address", content:"Lucky Street 126"
+      icon: HiLocationMarker, type:"Address", content:"Lucky Street 126"
    },
     {
-      icon: PhoneIcon, type:"Instagram", content:"TechRevive.com"
+      icon: FaInstagram, type:"Instagram", content:"TechRevive.com"
    },
 ];
 
 const media =[
-    {media:PhoneIcon},
-    {media:PhoneIcon},
-    {media:PhoneIcon},
+    {media: FiFacebook},
+    {media:FaInstagram},
+    {media:FaXTwitter},
 ]
 
   return (
@@ -76,7 +81,7 @@ const media =[
                                    {
                                     media.map((card,index) =>(
                                         <div key={index} className="">
-                                        <card.media size={20} />
+                                        <card.media className='text-buttons font-montserratBold' size={20} />
                                     </div>
                                     ))
                                     

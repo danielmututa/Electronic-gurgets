@@ -89,7 +89,7 @@ const Navbar = () => {
 
 
 
-
+           {/* shop */}
             
           </div>
         </div>
@@ -107,20 +107,30 @@ const Navbar = () => {
               openMenu === 'shop' ? 'opacity-100 transform scale-y-100' : 'opacity-0 transform scale-y-0'
             }`}
           >
-            <ul>
-              <li 
-                className="px-4 py-4 hover:hover:bg-buttons cursor-pointer"
+              <div className="w-full flex flex-col">
+       
+       <Link to="/shop" 
+                className="px-4 py-4 hover:bg-buttons cursor-pointer"
                 onClick={handleMenuItemClick}
-              >Product Listings</li>
-              <li 
-                className="px-4 py-4 hover:hover:bg-buttons cursor-pointer"
+              >Product Listings</Link>
+
+
+             
+
+            <Link to="/faq" 
+                className="px-4 py-4 hover:bg-buttons cursor-pointer"
                 onClick={handleMenuItemClick}
-              >Categories</li>
-              <li 
-                className="px-4 py-4 hover:hover:bg-buttons cursor-pointer"
+              >Categories</Link>
+
+
+             
+  <Link to="/faq" 
+                className="px-4 py-4 hover:bg-buttons cursor-pointer"
                 onClick={handleMenuItemClick}
-              >Account</li>
-            </ul>
+              >Account</Link>
+
+              
+            </div>
           </div>
         </div>
 

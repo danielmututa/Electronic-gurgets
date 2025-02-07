@@ -2,6 +2,10 @@ import {  LocateIcon, Octagon, Phone, PhoneIcon } from 'lucide-react'
 import React from 'react'
 import {HiLocationMarker} from "react-icons/hi"
 import { FaRegEnvelopeOpen} from 'react-icons/fa6';
+import { FiFacebook } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+
 
 
 const Footer = () => {
@@ -19,9 +23,9 @@ const Footer = () => {
     ]
   
     const icons = [
-        {icon:Octagon},
-        {icon:Octagon},
-        {icon:Octagon}
+        {icon: FiFacebook},
+        {icon:FaInstagram},
+        {icon:FaXTwitter}
     ]
 
 
@@ -123,9 +127,9 @@ const Footer = () => {
     <div className=" w-[45%] md:w-[23%]  flex items-center justify-end gap-11">
         
             <div  className="flex gap-5">
-                <Octagon className='w-[25px] h-[25px] text-white font-montserrat'/>
-                <Octagon className='w-[25px] h-[25px] text-white font-montserrat'/>
-                <Octagon className='w-[25px] h-[25px] text-white font-montserrat'/>
+                <FiFacebook className='w-[25px] h-[25px] text-white font-montserrat'/>
+                <FaInstagram className='w-[25px] h-[25px] text-white font-montserrat'/>
+                <FaXTwitter className='w-[25px] h-[25px] text-white font-montserrat'/>
             </div>
      
     </div>
