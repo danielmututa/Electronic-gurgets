@@ -178,7 +178,7 @@ const Shop = () => {
               className={`cursor-pointer transition-colors duration-200 flex items-center gap-2 ${
                 stockFilter === 'outStock' 
                   ? "text-navbar  font-semibold" 
-                  : "text-gray-600 hover:bg-navbar "
+                  : "text-gray-600 hover:text-navbar "
               }`}
               onClick={() => setStockFilter('outStock')}
             >

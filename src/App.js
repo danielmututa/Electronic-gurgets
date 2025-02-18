@@ -13,6 +13,7 @@ import FQA from './components/pages/FQA';
 import Whilelist from './components/pages/Whilelist';
 import Login from './components/pages/Login';
 import Shop from './components/shop/Shop';
+import Categories from './components/shop/Categories';
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <Route path='whilelist' element={< Whilelist/>}/>
         <Route path='login' element={< Login/>}/>
         <Route path='shop' element={< Shop/>}/>
+        <Route path='categories' element={< Categories/>}/>
        </Routes>
        <Footer/>
     </div>

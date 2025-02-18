@@ -117,7 +117,7 @@ const Navbar = () => {
 
              
 
-            <Link to="/faq" 
+            <Link to="/categories" 
                 className="px-4 py-4 hover:bg-buttons cursor-pointer"
                 onClick={handleMenuItemClick}
               >Categories</Link>
